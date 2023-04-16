@@ -6,6 +6,7 @@ sudo curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/cata
 cd /app
 sudo unzip /tmp/catalogue.zip
 cd /app
+sudo cp catalogue.service /etc/systemd/system/
 sudo npm install
 sudo systemctl daemon-reload
 sudo systemctl enable catalogue
